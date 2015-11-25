@@ -1,0 +1,26 @@
+{
+  "name": "vincent",
+  "version": "1.0.0",
+  "description": "vincent =======",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sullenor/vincent.git"
+  },
+  "keywords": [
+    "docker",
+    "npm"
+  ],
+  "author": "Alexey Litvinov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sullenor/vincent/issues"
+  },
+  "homepage": "https://github.com/sullenor/vincent#readme",
+  "dependencies": {
+    "canvas": "^1.3.4"
+  }
+}
