@@ -8,7 +8,7 @@ RUN apt-get install -qqy libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-es
 WORKDIR /var/www
 
 COPY ./package.json /var/www/package.json
-RUN npm i
+RUN npm install
 
 COPY ./index.js /var/www/index.js
 COPY ./vincent-van-gogh.png /var/www/vincent-van-gogh.png

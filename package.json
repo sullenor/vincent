@@ -4,8 +4,8 @@
   "description": "vincent =======",
   "main": "index.js",
   "scripts": {
-    "build": "docker build -t vincent .",
-    "start": "docker run -v $(pwd)/ascii:/var/www/ascii --rm vincent"
+    "build": "docker build --tag vincent .",
+    "start": "docker run --volume $(pwd)/ascii:/var/www/ascii --rm vincent"
   },
   "repository": {
     "type": "git",
