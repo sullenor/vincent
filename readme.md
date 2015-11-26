@@ -8,11 +8,11 @@ Van Gogh
 ## Usage
 
 ```bash
-$ npm run build
+$ docker build --tag vincent .
 ```
 
 ```bash
-$ npm start
+$ docker run --volume $(pwd)/ascii:/var/www/ascii --rm vincent
 ```
 
 ## Links
