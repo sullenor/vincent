@@ -2,8 +2,12 @@ FROM node:5.1.0
 
 LABEL "code"="Van Gogh"
 
-RUN apt-get update
-RUN apt-get install -qqy libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    g++ \
+    libgif-dev \
+    libjpeg62-turbo-dev \
+    libpango1.0-dev
 
 WORKDIR /var/www
 
