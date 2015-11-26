@@ -13,4 +13,4 @@ RUN npm i
 COPY ./index.js /var/www/index.js
 COPY ./vincent-van-gogh.png /var/www/vincent-van-gogh.png
 
-CMD test -d ascii && node index.js > ascii/vincent.txt
+CMD node index.js > ascii/vincent.txt
