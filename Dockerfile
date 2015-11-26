@@ -7,10 +7,10 @@ RUN apt-get install -qqy libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-es
 
 WORKDIR /var/www
 
-COPY ./package.json /var/www/package.json
+ADD ./package.json /var/www/
 RUN npm i
 
-COPY ./index.js /var/www/index.js
-COPY ./vincent-van-gogh.png /var/www/vincent-van-gogh.png
+ADD ./index.js /var/www/
+ADD ./vincent-van-gogh.png /var/www/
 
 CMD test -d ascii && node index.js > ascii/vincent.txt
