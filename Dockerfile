@@ -13,4 +13,4 @@ RUN npm install
 COPY ./index.js /var/www/index.js
 COPY ./vincent-van-gogh.png /var/www/vincent-van-gogh.png
 
-CMD node index.js > ascii/vincent.txt
+CMD node index.js > ascii/vincent.txt && cat ascii/vincent.txt
