@@ -5,14 +5,28 @@ vincent
 
 Van Gogh
 
-## Usage
+## Requirements
+
+To use this repo we require **docker**, **docker-compose** and **docker-machine** installed on your computer. On mac os x those dependencies can be easily installed with brew:
 
 ```bash
-$ npm run build
+$ brew install docker
 ```
 
+In order to continue, you need to create a docker machine and start it. Read more about here: https://docs.docker.com/machine/get-started/
+
+## Usage
+
+Build image:
+
 ```bash
-$ npm start
+$ docker build --tag vincent .
+```
+
+Run it:
+
+```bash
+$ docker run --volume $(pwd)/ascii:/var/www/ascii --rm vincent
 ```
 
 ## Links
